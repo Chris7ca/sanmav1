@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400');
+
+img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
+
+.image-cover{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-fit: cover;
+}
+
+.letter-spacing{
+    letter-spacing: 5px;
+}
+
+.text-yellow{
+    color: #ffd502;
+}
+
+.vertical-image{
+    min-height: 600px;
+    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.background-blend-white {
+    background-color: rgba(255, 255, 255, .3);
+    background-blend-mode: soft-light;
+}
+
+.uk-transition-fade.uk-overlay{
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+} 
+
+.quatify {
+    font-family: 'Quantify';
+}
+
+.pacific {
+    font-family: 'PacificAgain';
+    color: #ffd502;
+}
+
+.transition-logo-overlay .sanma span {
+    float: left;
+    margin: 0px 0px;
+    opacity: 1;
+    animation: fadeOut .200s ease-out both;
+}
+
+.transition-logo-overlay .eventos {
+    transform: translateX(-50%);
+    opacity: 0;
+    letter-spacing: -1px;
+    transition: all .400s ease-out;
+}
+
+.overlay-images:hover > .transition-logo-overlay .sanma span {
+    float: left;
+    opacity: 0;
+	animation: fadeIn .200s ease-in both;
+}
+
+.overlay-images:hover > .transition-logo-overlay .eventos {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all .400s ease-in;
+}
+
+.transition-logo-overlay .sanma span:nth-child(1) {
+	animation-delay: .100s !important;
+}
+
+.transition-logo-overlay .sanma span:nth-child(2) {
+	animation-delay: .200s !important;
+}
+
+.transition-logo-overlay .sanma span:nth-child(3) {
+	animation-delay: .300s !important;
+}
+
+.transition-logo-overlay .sanma span:nth-child(4) {
+	animation-delay: .400s !important;
+}
+
+.transition-logo-overlay .sanma span:nth-child(5) {
+	animation-delay: .500s !important;
+}
+
+.social-networks li a {
+    border: solid 1px #999;
+}
+
+.social-networks li a:hover{
+    border: solid 1px #fff;
+}
+
+@keyframes fadeIn {
+	from {
+        opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+        opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+        opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+@media screen and (max-width: 768px){
+    .vertical-image {
+        min-height: 300px;
+    }
+}
+
+@font-face {
+    font-family: Quantify;
+    src: url('./../fonts/Quantify.woff');
+}
+
+@font-face {
+    font-family: PacificAgain;
+    src: url(./../fonts/PacificAgain.woff);
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.site.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+    <header class="uk-container uk-container-expand uk-background-muted uk-light">
+        <nav uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html"><img src="images/logo-sanma.png" width="150" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active uk-visible@m"><a href="index.html">Inicio</a></li>
+                    <li class="uk-visible@m"><a href="galeria.html">Galeria</a></li>
+                    <li class="uk-visible@m">
+                        <a href="servicios.html">Servicios</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">Opciones</li>
+                                <li><a href="servicio.html">Servicio 1</a></li>
+                                <li><a href="servicio.html">Servicio 2</a></li>
+                                <li><a href="servicio.html">Servicio 3</a></li>
+                                <li><a href="servicio.html">Servicio 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="uk-visible@m"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="uk-hidden@m"><a href="#menu-mobile" class="letter-spacing" uk-toggle><span uk-icon="icon: menu; ratio: 1.8"></span> MENU</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="uk-container uk-container-expand uk-background-muted uk-padding" uk-height-viewport="offset-top: true">
+        <div class="uk-height-1-1">
+            <div uk-slideshow="autoplay: true; animation: fade; infinite: true;">
+                <div class="uk-position-relative">
+                    <ul class="uk-slideshow-items" uk-height-viewport="offset-bottom: 13">
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-right">
+                                <img data-src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" uk-cover uk-img>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                <img data-src="https://images.pexels.com/photos/382297/pexels-photo-382297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" uk-cover uk-img>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
+                                <img data-src="https://images.pexels.com/photos/1284296/pexels-photo-1284296.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" uk-cover uk-img>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                                <img data-src="https://images.pexels.com/photos/395134/pexels-photo-395134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" uk-cover uk-img>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="uk-position-bottom-left uk-position-small uk-margin-remove uk-background-muted uk-light">
+                        <a class="uk-padding-small" href="#" uk-slideshow-item="previous" uk-icon="icon: arrow-left; ratio: 1.5"></a>
+                        <a class="uk-padding-small" href="#" uk-slideshow-item="next" uk-icon="icon: arrow-right; ratio: 1.5"></a>
+                    </div>
+                    <div class="uk-position-bottom-right uk-position-small uk-margin-remove uk-background-secondary uk-padding uk-text-right uk-visible@s">
+                        <h1 class="uk-heading-primary">Diseñadores de<br> Eventos</h1>
+                        <a href="galeria.html" class="uk-text-muted uk-link-reset">Mira nuestra galeria <span class="uk-margin-left text-yellow" uk-icon="icon: arrow-right; ratio: 1.5"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="uk-container uk-container-expand uk-background-secondary uk-margin-large-bottom" uk-height-viewport="offset-top: true">
+        <div class="uk-grid uk-grid-small uk-child-width-1-2@m uk-flex uk-flex-middle uk-margin-large-top" uk-grid="masonry: true">
+            <div class=" uk-flex uk-flex-column uk-flex-middle uk-background-bottom-right uk-background-norepeat" style="background-image: url(images/inspiration-geometry.png);" uk-scrollspy="cls: uk-animation-slide-right-medium">
+                <div class="uk-width-4-5@m">
+                    <h2>Sobre nosotros</h2>
+                    <p>Somos una empresa comprometida con sus clientes que busca satisfacer las necesidades y gustos más especiales. Por ello nos encontramos entre las mejores empresas que puedes elegir a la hora de planear tu boda; nosotros iluminamos tu momento. <span uk-icon="icon: quote-right; ratio: 1.5"></span></p>
+                    <a href="nosotros.html" class="uk-button uk-button-secondary">Más información</a>
+                </div>
+                <div class="uk-inline-clip uk-transition-toggle uk-margin">
+                    <img data-src="https://images.pexels.com/photos/1451475/pexels-photo-1451475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="600" uk-img>
+                    <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                        <a class="transition-logo-overlay uk-padding uk-link-reset">
+                            <p class="uk-h4 uk-margin-remove sanma">
+                                <span class="quatify">S</span>
+                                <span class="quatify">A</span>
+                                <span class="quatify">N</span>
+                                <span class="quatify">M</span>
+                                <span class="quatify">A</span>
+                            </p>
+                            <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                <span class="pacific">e</span>
+                                <span class="pacific">v</span>
+                                <span class="pacific">e</span>
+                                <span class="pacific">n</span>
+                                <span class="pacific">t</span>
+                                <span class="pacific">o</span>
+                                <span class="pacific">s</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-flex-first@m" uk-scrollspy="cls: uk-animation-slide-left-medium">
+                <div class="uk-backgroun-top-left uk-background-norepeat uk-padding uk-background-image@s" style="background-image: url(images/dark-background.png)">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img class="vertical-image" data-src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" uk-img>
+                        <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                            <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                <p class="uk-h4 uk-margin-remove sanma">
+                                    <span class="quatify">S</span>
+                                    <span class="quatify">A</span>
+                                    <span class="quatify">N</span>
+                                    <span class="quatify">M</span>
+                                    <span class="quatify">A</span>
+                                </p>
+                                <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                    <span class="pacific">e</span>
+                                    <span class="pacific">v</span>
+                                    <span class="pacific">e</span>
+                                    <span class="pacific">n</span>
+                                    <span class="pacific">t</span>
+                                    <span class="pacific">o</span>
+                                    <span class="pacific">s</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <h5 class="uk-margin-remove-bottom">Titulo de la imagen</h5>
+                    <p class="uk-margin-remove">Texto descriptivo de la imagen </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid uk-grid-small" uk-grid>
+            <div class="uk-width-expand@m uk-margin-large" uk-scrollspy="cls: uk-animation-fade">
+                <div class="">
+                    <h4 class="uk-remove-margin letter-spacing text-yellow">Porfalio</h4>
+                    <h2 class="uk-remove-margin">Subtitulo con texto aleatorio</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum molestias architecto unde suscipit ex labore mollitia fugiat id vero repellat illum magnam deserunt numquam, ratione quasi. Aperiam, cupiditate, doloremque.
+                    </p>
+                    <a href="galeria.html" class="uk-button uk-button-primary">Mira nuesta galeria <span class="uk-margin-left" uk-icon="icon: arrow-right; ratio: 1.5"></span></a>
+                </div>
+            </div>
+            <div class="uk-width-3-5@m uk-padding-large" uk-scrollspy="cls: uk-animation-slide-top-small">
+                <div class="uk-position-relative uk-visible-toggle uk-dark" uk-slider>
+                    <ul class="uk-slider-items uk-child-width-1-2@m uk-grid">
+                        <li>
+                            <div class="uk-panel">
+                                <img src="https://images.pexels.com/photos/698319/pexels-photo-698319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel">
+                                <img src="https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel">
+                                <img src="https://images.pexels.com/photos/802505/pexels-photo-802505.jpeg?cs=srgb&dl=boxes-environment-evening-802505.jpg&fm=jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-panel">
+                                <img src="https://images.pexels.com/photos/1381782/pexels-photo-1381782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="uk-position-top-left uk-background-secondary">
+                        <a class="uk-padding-small uk-text-primary" href="#" uk-slider-item="previous" uk-icon="icon: arrow-left; ratio:1.5"></a>
+                        <a class="uk-padding-small uk-text-primary" href="#" uk-slider-item="next" uk-icon="icon: arrow-right; ratio:1.5"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="uk-container uk-container-expand uk-background-muted">
+        <div class="uk-margin-large-top uk-margin-large-bottom">
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-3@l uk-light">
+                    <h3 class="letter-spacing uk-margin-remove">¿Deseas obtener más información?</h3>
+                    <h3 class="letter-spacing uk-margin-remove">Escríbenos</h3>
+                    <form id="moreinfo" class="uk-grid uk-flex-middle uk-margin" uk-grid>
+                        <div class="uk-width-1-1">
+                            <input type="text" class="uk-input" placeholder="Correo electrónico">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <textarea class="uk-textarea" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="uk-button uk-button-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-width-2-3@l uk-flex uk-flex-column uk-flex-center uk-dark">
+                    <div class="uk-background-primary uk-light uk-padding uk-margin-top-medium">
+                        <div class="uk-grid uk-grid uk-child-width-1-3@s" uk-grid>
+                            <div class="uk-flex uk-flex-middle">
+                                <div><img src="images/logo-sanma.png" width="200" alt=""></div>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Contacto</h5>
+                                <ul class="uk-list uk-text-muted">
+                                    <li>Tel. 777 327 4027</li>
+                                    <li>Tel. 777 363 5489</li>
+                                    <li>jesus@yuzam.mx</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Redes Sociales</h5>
+                                <ul class="uk-flex uk-flex-around uk-iconnav social-networks">
+                                    <li><a href="" class="uk-padding-small" uk-icon="facebook"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="twitter"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-grid uk-grid-divider uk-flex-right" uk-grid>
+                            <div><a href="#privacy" class="uk-text-muted uk-link-reset" uk-toggle>Privacidad</a></div>
+                            <div><a href="#rights" class="uk-text-muted uk-link-reset" uk-toggle>Derechos</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Modals   -->
+    
+    <div id="menu-mobile" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-large" uk-height-viewport>
+                <ul class="uk-nav uk-nav-default uk-text-center">
+                    <li class="uk-nav-header"><span class="uk-h2">MENU</span></li>
+                    <li class="uk-h5 uk-margin-small"><a href="index.html">INICIO</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="galeria.html">GALERIA</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="servicios.html">SERVICIOS</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="privacy" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Aviso de Privacidad</h2>
+                    <span class="uk-text-meta">Última actualización: dd/mm/aa</span>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/893894/pexels-photo-893894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rights" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Contribuciones y derechos</h2>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>

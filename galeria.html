@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.site.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+    <header class="uk-container uk-container-expand uk-background-muted uk-light">
+        <nav uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html"><img src="images/logo-sanma.png" width="150" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active uk-visible@m"><a href="index.html">Inicio</a></li>
+                    <li class="uk-visible@m"><a href="galeria.html">Galeria</a></li>
+                    <li class="uk-visible@m">
+                        <a href="servicios.html">Servicios</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">Opciones</li>
+                                <li><a href="servicio.html">Servicio 1</a></li>
+                                <li><a href="servicio.html">Servicio 2</a></li>
+                                <li><a href="servicio.html">Servicio 3</a></li>
+                                <li><a href="servicio.html">Servicio 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="uk-visible@m"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="uk-hidden@m"><a href="#menu-mobile" class="letter-spacing" uk-toggle><span uk-icon="icon: menu; ratio: 1.8"></span> MENU</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="uk-container uk-container-expand uk-background-secondary uk-dark">
+        <div class="uk-padding-large">
+            <div class="uk-grid uk-flex-middle uk-child-width-1-2@m uk-background-top-center uk-background-norepeat uk-background-image@m" uk-grid style="background-image: url(images/inspiration-geometry.png); background-size: 30%;">
+                <div class="uk-background-bottom-right uk-background-norepeat uk-height-medium uk-visible@m" >
+                </div>
+                <div class="uk-background-bottom-right uk-background-norepeat uk-background-image@m">
+                    <h1 class="letter-spacing">Galería de eventos</h1>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloribus voluptatum obcaecati, quidem, consequatur itaque nemo, sit molestias eligendi molestiae magni veniam dignissimos consectetur, ipsam optio placeat dolorem nobis a.</p>
+                </div>
+            </div>
+            <div uk-filter=".js-filter">
+
+                <ul class="uk-subnav uk-subnav-pill uk-light uk-margin-top" uk-switcher>
+                    <li uk-filter-control><a href="#">TODO</a></li>
+                    <li uk-filter-control="[data-tag='1']"><a href="#">SERVICIO 1</a></li>
+                    <li uk-filter-control="[data-tag='2']"><a href="#">SERVICIO 2</a></li>
+                    <li uk-filter-control="[data-tag='3']"><a href="#">SERVICIO 3</a></li>
+                    <li uk-filter-control="[data-tag='4']"><a href="#">SERVICIO 4</a></li>
+                </ul>
+
+                <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center uk-margin js-filter" uk-grid="masonry: true" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500">
+                    <div data-tag="1">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/1122530/pexels-photo-1122530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a href="#show-image" class="transition-logo-overlay uk-padding uk-link-reset" uk-toggle>
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="2">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/870512/flowers-vase-decor-interior-870512.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="3">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/173665/pexels-photo-173665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="1">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/698170/pexels-photo-698170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="2">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="1">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/930004/pexels-photo-930004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="4">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/547125/pexels-photo-547125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="1">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/695214/pexels-photo-695214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="1">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/401107/pexels-photo-401107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a href="" class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="2">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/1157255/pexels-photo-1157255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="3">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/1158589/pexels-photo-1158589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tag="4">
+                        <div class="uk-inline-clip uk-transition-toggle">
+                            <img data-src="https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="auto" uk-img>
+                            <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle uk-margin-remove overlay-images">
+                                <a class="transition-logo-overlay uk-padding uk-link-reset">
+                                    <p class="uk-h4 uk-margin-remove sanma">
+                                        <span class="quatify">S</span>
+                                        <span class="quatify">A</span>
+                                        <span class="quatify">N</span>
+                                        <span class="quatify">M</span>
+                                        <span class="quatify">A</span>
+                                    </p>
+                                    <p class="uk-h5 uk-margin-remove uk-text-right eventos">
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">v</span>
+                                        <span class="pacific">e</span>
+                                        <span class="pacific">n</span>
+                                        <span class="pacific">t</span>
+                                        <span class="pacific">o</span>
+                                        <span class="pacific">s</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="uk-width-1-1 uk-text-center">
+                    <button class="uk-button uk-button-text letter-spacing uk-text-bold">Cargar más imagénes...</button>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <section class="uk-background-cover uk-padding-large background-blend-white" style="background-image: url(https://images.pexels.com/photos/6479/person-holiday-vacation-woman.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+        <div class="uk-margin-large-top uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium">
+            <h3 class="uk-text-muted">¿Deseas plantearnos tu idea?</h3>
+            <h2 class="uk-heading-primary uk-text-muted">777 327 4027</h2>
+            <h5 class="uk-text-muted">Nos encantrá brindarte el mejor apoyo para que tu evento sea inolvidable.</h5>
+        </div>
+    </section>
+   
+    <footer class="uk-container uk-container-expand uk-background-muted">
+        <div class="uk-margin-large-top uk-margin-large-bottom">
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-3@l uk-light">
+                    <h3 class="letter-spacing uk-margin-remove">¿Deseas obtener más información?</h3>
+                    <h3 class="letter-spacing uk-margin-remove">Escríbenos</h3>
+                    <form id="moreinfo" class="uk-grid uk-flex-middle uk-margin" uk-grid>
+                        <div class="uk-width-1-1">
+                            <input type="text" class="uk-input" placeholder="Correo electrónico">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <textarea class="uk-textarea" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="uk-button uk-button-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-width-2-3@l uk-flex uk-flex-column uk-flex-center uk-dark">
+                    <div class="uk-background-primary uk-light uk-padding uk-margin-top-medium">
+                        <div class="uk-grid uk-grid uk-child-width-1-3@s" uk-grid>
+                            <div class="uk-flex uk-flex-middle">
+                                <div><img src="images/logo-sanma.png" width="200" alt=""></div>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Contacto</h5>
+                                <ul class="uk-list uk-text-muted">
+                                    <li>Tel. 777 327 4027</li>
+                                    <li>Tel. 777 363 5489</li>
+                                    <li>jesus@yuzam.mx</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Redes Sociales</h5>
+                                <ul class="uk-flex uk-flex-around uk-iconnav social-networks">
+                                    <li><a href="" class="uk-padding-small" uk-icon="facebook"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="twitter"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-grid uk-grid-divider uk-flex-right" uk-grid>
+                            <div><a href="#privacy" class="uk-text-muted uk-link-reset" uk-toggle>Privacidad</a></div>
+                            <div><a href="#rights" class="uk-text-muted uk-link-reset" uk-toggle>Derechos</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--    Modals   -->
+    
+    <div id="menu-mobile" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-large" uk-height-viewport>
+                <ul class="uk-nav uk-nav-default uk-text-center">
+                    <li class="uk-nav-header"><span class="uk-h2">MENU</span></li>
+                    <li class="uk-h5 uk-margin-small"><a href="index.html">INICIO</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="galeria.html">GALERIA</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="servicios.html">SERVICIOS</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="show-image" class="uk-modal-container" uk-modal>
+        <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-background-cover " style="background-image: url('https://images.pexels.com/photos/1122530/pexels-photo-1122530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport="offset-bottom: 20"></div>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Descripción</h2>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                </div>
+            </div>
+            <div class="uk-position-bottom-right">
+                <a href="" class="uk-padding" uk-icon="icon: download; ratio: 1.5"></a>
+                <a href="" class="uk-padding" uk-icon="icon: arrow-left; ratio: 1.5"></a>
+                <a href="" class="uk-padding" uk-icon="icon: arrow-right; ratio: 1.5"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="privacy" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Aviso de Privacidad</h2>
+                    <span class="uk-text-meta">Última actualización: dd/mm/aa</span>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/893894/pexels-photo-893894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="rights" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Contribuciones y derechos</h2>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.site.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+
+    <header class="uk-container uk-container-expand uk-background-muted uk-light">
+        <nav uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html"><img src="images/logo-sanma.png" width="150" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active uk-visible@m"><a href="index.html">Inicio</a></li>
+                    <li class="uk-visible@m"><a href="galeria.html">Galeria</a></li>
+                    <li class="uk-visible@m">
+                        <a href="servicios.html">Servicios</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header">Opciones</li>
+                                <li><a href="servicio.html">Servicio 1</a></li>
+                                <li><a href="servicio.html">Servicio 2</a></li>
+                                <li><a href="servicio.html">Servicio 3</a></li>
+                                <li><a href="servicio.html">Servicio 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="uk-visible@m"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="uk-hidden@m"><a href="#menu-mobile" class="letter-spacing" uk-toggle><span uk-icon="icon: menu; ratio: 1.8"></span> MENU</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="uk-container uk-container-expand uk-background-muted uk-padding uk-light">
+        <div class="uk-margin-top-large uk-margin-bottom-large">
+            <h1 class="uk-heading-hero letter-spacing">Servicios</h1>
+        </div>
+    </section>
+
+    <main class="uk-container uk-container-expand uk-padding">
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-width-1-3@m">
+                <h3 class="text-yellow">Nuestros servicios</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aspernatur, nisi sit error reiciendis numquam molestias quibusdam ut? Magnam corrupti nisi vero dolor veniam dolorum dignissimos soluta eum molestiae odio.</p>
+            </div>
+        </div>
+        <div class="uk-margin-medium">
+            <div class="uk-grid uk-grid-collapse uk-grid-match uk-flex-middle uk-child-width-1-2@m uk-margin-medium" uk-grid uk-scrollspy="uk-animation-slide-bottom-small">
+                <div class="uk-height-large">
+                    <img data-src="https://images.pexels.com/photos/276514/pexels-photo-276514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-width="" data-height="" class="image-cover" uk-img alt="">
+                </div>
+                <div class="uk-background-contain" style="background-image: url('images/inspiration-geometry.png'); background-size: 60%;">
+                    <div class="uk-padding">
+                        <h2>Servicio 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus optio, aliquid neque molestiae. Excepturi odio ut laboriosam consectetur necessitatibus alias optio. Esse possimus earum ipsa dolore, saepe pariatur beatae perspiciatis.</p>
+                        <a href="servicio.html" class="uk-button uk-button-secondary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid uk-grid-collapse uk-grid-match uk-flex-middle uk-child-width-1-2@m uk-margin-medium" uk-grid uk-grid uk-scrollspy="uk-animation-slide-bottom-small">
+               <div class="uk-height-large uk-flex-last@m">
+                   <img data-src="https://images.pexels.com/photos/179114/pexels-photo-179114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-width="" data-height="" uk-img alt="">
+               </div>
+                <div class="uk-background-contain" style="background-image: url('images/inspiration-geometry.png'); background-size: 60%;">
+                    <div class="uk-padding">
+                        <h2>Servicio 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus optio, aliquid neque molestiae. Excepturi odio ut laboriosam consectetur necessitatibus alias optio. Esse possimus earum ipsa dolore, saepe pariatur beatae perspiciatis.</p>
+                        <a href="servicio.html" class="uk-button uk-button-secondary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid uk-grid-collapse uk-grid-match uk-flex-middle uk-child-width-1-2@m uk-margin-medium" uk-grid uk-grid uk-scrollspy="uk-animation-slide-bottom-small">
+                <div class="uk-height-large">
+                    <img data-src="https://images.pexels.com/photos/1313817/pexels-photo-1313817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-width="" data-height="" uk-img alt="">
+                </div>
+                <div class="uk-background-contain" style="background-image: url('images/inspiration-geometry.png'); background-size: 60%;">
+                    <div class="uk-padding">
+                        <h2>Servicio 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus optio, aliquid neque molestiae. Excepturi odio ut laboriosam consectetur necessitatibus alias optio. Esse possimus earum ipsa dolore, saepe pariatur beatae perspiciatis.</p>
+                        <a href="servicio.html" class="uk-button uk-button-secondary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="uk-container uk-container-expand uk-background-primary uk-padding-large">
+        <h5 class="uk-text-center text-yellow letter-spacing">PARTNERS</h5>
+        <div class="uk-flex uk-flex-around uk-text-bold uk-light letter-spacing">
+            <div><p>Las Mañanitas</p></div>
+            <div><p>Jardines de México</p></div>
+            <div><p>Huayacán</p></div>
+            <div><p>Hacienda Casasano</p></div>
+        </div>
+    </section>
+
+    <footer class="uk-container uk-container-expand uk-background-muted">
+        <div class="uk-margin-large-top uk-margin-large-bottom">
+            <div class="uk-grid" uk-grid>
+                <div class="uk-width-1-3@l uk-light">
+                    <h3 class="letter-spacing uk-margin-remove">¿Deseas obtener más información?</h3>
+                    <h3 class="letter-spacing uk-margin-remove">Escríbenos</h3>
+                    <form id="moreinfo" class="uk-grid uk-flex-middle uk-margin" uk-grid>
+                        <div class="uk-width-1-1">
+                            <input type="text" class="uk-input" placeholder="Correo electrónico">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <textarea class="uk-textarea" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <button class="uk-button uk-button-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-width-2-3@l uk-flex uk-flex-column uk-flex-center uk-dark">
+                    <div class="uk-background-primary uk-light uk-padding uk-margin-top-medium">
+                        <div class="uk-grid uk-grid uk-child-width-1-3@s" uk-grid>
+                            <div class="uk-flex uk-flex-middle">
+                                <div><img src="images/logo-sanma.png" width="200" alt=""></div>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Contacto</h5>
+                                <ul class="uk-list uk-text-muted">
+                                    <li>Tel. 777 327 4027</li>
+                                    <li>Tel. 777 363 5489</li>
+                                    <li>jesus@yuzam.mx</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="uk-heading-divider letter-spacing">Redes Sociales</h5>
+                                <ul class="uk-flex uk-flex-around uk-iconnav social-networks">
+                                    <li><a href="" class="uk-padding-small" uk-icon="facebook"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="twitter"></a></li>
+                                    <li><a href="" class="uk-padding-small" uk-icon="instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-grid uk-grid-divider uk-flex-right" uk-grid>
+                            <div><a href="#privacy" class="uk-text-muted uk-link-reset" uk-toggle>Privacidad</a></div>
+                            <div><a href="#rights" class="uk-text-muted uk-link-reset" uk-toggle>Derechos</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--    Modals   -->
+
+    <div id="menu-mobile" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-large" uk-height-viewport>
+                <ul class="uk-nav uk-nav-default uk-text-center">
+                    <li class="uk-nav-header"><span class="uk-h2">MENU</span></li>
+                    <li class="uk-h5 uk-margin-small"><a href="index.html">INICIO</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="galeria.html">GALERIA</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="servicios.html">SERVICIOS</a></li>
+                    <li class="uk-h5 uk-margin-small"><a href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacy" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Aviso de Privacidad</h2>
+                    <span class="uk-text-meta">Última actualización: dd/mm/aa</span>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/893894/pexels-photo-893894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rights" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div class="uk-padding-large">
+                    <h2 class="uk-h1">Contribuciones y derechos</h2>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-background-cover uk-flex-first@m" style="background-image: url('https://images.pexels.com/photos/1376864/pexels-photo-1376864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');" uk-height-viewport></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</body>
+
+</html>
