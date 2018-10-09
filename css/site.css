@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400');
 
-img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
+img[data-src][src*='data:image'] {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
 
-.image-cover{
+.image-cover {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -10,15 +12,15 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
     object-fit: cover;
 }
 
-.letter-spacing{
+.letter-spacing {
     letter-spacing: 5px;
 }
 
-.text-yellow{
+.text-yellow {
     color: #ffd502;
 }
 
-.vertical-image{
+.vertical-image {
     min-height: 600px;
     width: auto;
     -o-object-fit: cover;
@@ -30,10 +32,10 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
     background-blend-mode: soft-light;
 }
 
-.uk-transition-fade.uk-overlay{
+.uk-transition-fade.uk-overlay {
     -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
-} 
+}
 
 .quatify {
     font-family: 'Quantify';
@@ -61,7 +63,7 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
 .overlay-images:hover > .transition-logo-overlay .sanma span {
     float: left;
     opacity: 0;
-	animation: fadeIn .200s ease-in both;
+    animation: fadeIn .200s ease-in both;
 }
 
 .overlay-images:hover > .transition-logo-overlay .eventos {
@@ -71,56 +73,82 @@ img[data-src][src*='data:image'] { background: rgba(0,0,0,0.8) !important; }
 }
 
 .transition-logo-overlay .sanma span:nth-child(1) {
-	animation-delay: .100s !important;
+    animation-delay: .100s !important;
 }
 
 .transition-logo-overlay .sanma span:nth-child(2) {
-	animation-delay: .200s !important;
+    animation-delay: .200s !important;
 }
 
 .transition-logo-overlay .sanma span:nth-child(3) {
-	animation-delay: .300s !important;
+    animation-delay: .300s !important;
 }
 
 .transition-logo-overlay .sanma span:nth-child(4) {
-	animation-delay: .400s !important;
+    animation-delay: .400s !important;
 }
 
 .transition-logo-overlay .sanma span:nth-child(5) {
-	animation-delay: .500s !important;
+    animation-delay: .500s !important;
 }
 
 .social-networks li a {
     border: solid 1px #999;
 }
 
-.social-networks li a:hover{
+.social-networks li a:hover {
     border: solid 1px #fff;
 }
 
+#video-background {
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    overflow: hidden;
+}
+
+#video-background video {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+#filter-video{
+    position: relative;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.4);   
+}
+
 @keyframes fadeIn {
-	from {
+    from {
         opacity: 0;
-		transform: translate3d(0, 100%, 0);
-	}
-	to {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
         opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes fadeOut {
     from {
         opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-	to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
         opacity: 0;
-		transform: translate3d(0, 100%, 0);
-	}
+        transform: translate3d(0, 100%, 0);
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .vertical-image {
         min-height: 300px;
     }
